@@ -1,0 +1,68 @@
+@font-face {
+    font-family: 'Archivo' ;
+    src: url(/fonts/fonts/Archivo/Archivo-Italic-VariableFont_wdth\,wght.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url(/fonts/fonts/Inter/Inter-Italic-VariableFont_opsz\,wght.ttf) format('truetype');
+}
+
+:root{
+
+    --text-dark: #101010;
+    --text-light: #FFFFFF;
+    --text-average: #757B8A;
+    --primary-color: #EB6E46;
+    --background-color: #FFF1ED;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    max-width: 1440;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+}
+
+.container{
+    padding-left: clamp(20px, 8.33vw, 120px);
+    padding-right: clamp(20px, 8.33vw, 120px);
+}
+
+
+.header-inner{
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+    background-color: var(--background-color);
+}
+
+.logo-coca img{
+    width: clamp(120px, 5vw, 140px);
+}
+
+#menu-smartphone img{
+    display: block;
+    width: 25px;
+}
+
+.menu-desktop{
+    display: none;
+}
+
+.hero{
+    background-color: var(--background-color);
+}
+
+.hero h1{
+    font-weight: 700;
+    font-family: 'Archive', sans-serif;
+    line-height: 120%;
+
+
+}
