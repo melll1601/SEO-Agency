@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'Archivo' ;
-    src: url(/fonts/fonts/Archivo/Archivo-Italic-VariableFont_wdth\,wght.ttf) format('truetype');
+    src: url(/fonts/fonts/Archivo/Archivo-VariableFont_wdth\,wght.ttf) format('truetype');
 }
 
 @font-face {
     font-family: 'Inter';
-    src: url(/fonts/fonts/Inter/Inter-Italic-VariableFont_opsz\,wght.ttf) format('truetype');
+    src: url(/fonts/fonts/Inter/Inter-VariableFont_opsz\,wght.ttf) format('truetype');
 }
 
 :root{
@@ -20,7 +20,6 @@
 *{
     margin: 0;
     padding: 0;
-    max-width: 1440;
     box-sizing: border-box;
 }
 
@@ -29,9 +28,12 @@ body{
 }
 
 .container{
-    padding-left: clamp(20px, 8.33vw, 120px);
-    padding-right: clamp(20px, 8.33vw, 120px);
+    padding-left: clamp(20px, 7vw, 120px);
+    padding-right: clamp(20px, 7vw, 120px);
+    padding-top: 3.2vw;
+    position: relative;
 }
+
 
 
 .header-inner{
@@ -40,6 +42,7 @@ body{
     justify-items: center;
     align-items: center;
     background-color: var(--background-color);
+    padding-bottom: clamp(40px, 9.7vw ,114px);
 }
 
 .logo-coca img{
@@ -61,8 +64,160 @@ body{
 
 .hero h1{
     font-weight: 700;
-    font-family: 'Archive', sans-serif;
+    font-family: 'Archivo', sans-serif;
     line-height: 120%;
+    font-size: clamp(36px, 3.38vw, 72px);
+    padding-bottom: clamp(20px, 3vw, 32px);
+}
 
+
+.hero p{
+
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--text-average);
+    padding-bottom: clamp(24px, 3vw, 40px);
+}
+
+#button {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    font-size: 16px;
+    padding: 16px 26.5px 16px 26.5px;
+    border-radius: 100px;
+    position: relative;
+    margin-bottom: 16.6%;
+}
+
+#arrow{
+    position: absolute;
+    transform: translateY(-44px);
+    left: 62%;
+    width: 95px;
+}
+
+
+.img-header-smartphone img{
+    margin: 0 auto ;
+    max-width: 93%;
+    display: block;
+    padding-bottom: 12%;
+}
+
+
+
+.sites-desktop{
+    display: none;
+}
+.sites-smartphone{
+    max-width: 375px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 100%;
+}
+
+h2{
+    font-weight: 700;
+    font-family: 'Archivo', sans-serif;
+    font-size: clamp(32px, 1.5vw + 25px,  48px);
+    text-align: center;
+}
+
+
+.cards img{
+    width: 56px;
+    margin: 24px 196px 56px 24px;
+}
+
+.card{
+    width: 276px;
+    height: 291px;
+    margin: 0 auto;
+    border-radius: 16px;
+    margin-bottom: 10rem;
+}
+
+.card h3{
+    font-size: 18px;
+    margin: 0px 48px 12px 24px;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+.card p{
+    font-size: 16px ;
+    margin: 0px 24px 24px 24px ;
+    line-height: 150%;
+    color: var(--text-average);
+}
+
+.optimize-page-content{
+    background-color: var(--background-color);
+}
+
+
+.video-with-remote-team img{
+    margin: 0 auto;
+    max-width: 100%;
+    display: block;
+    padding-top: 32%;
+    padding-bottom: 14% ;
+}
+
+.make-your-website{
+    background-color: var(--background-color);
+}
+
+.make-your-website h2{
+    text-align: left;
+    padding-bottom: 32px ;
+}
+
+.make-your-website p{
+    color: var(--text-average);
+    font-size: 16px;
+    padding-bottom: clamp(40px, 1.5vw + 34.4px, 56px);
+}
+
+.numbers{
+    display: flex;
+    gap: 45px ;
+}
+
+.numbers h2{
+    text-align: left;
+    font-family: 'Archivo', sans-serif;
+    font-weight: 700;
+    margin-bottom: 8px;
+    padding-bottom: 0px;
+    font-size: clamp(36px, 0.38vw + 34.6px, 40px);
+}
+
+.numbers p{
+    color: var(--text-average);
+    font-weight: 500;
+    font-size: 16px;
+    padding-bottom: clamp(72px, 7.7vw + 43.1px, 154px);
+
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px){
+
+    body{
+        display: grid;
+        grid-template-columns: 1fr;
+
+    }
 
 }
