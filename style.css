@@ -123,6 +123,7 @@ h2{
     font-family: 'Archivo', sans-serif;
     font-size: clamp(32px, 1.5vw + 25px,  48px);
     text-align: center;
+    padding-bottom: 56px;
 }
 
 
@@ -136,7 +137,7 @@ h2{
     height: 291px;
     margin: 0 auto;
     border-radius: 16px;
-    margin-bottom: 10rem;
+    margin-bottom: 60px;
 }
 
 .card h3{
@@ -283,10 +284,49 @@ h2{
     /* TIREI A IMG PQ NAO TAVA CONSEGUINDO */
 }
 
+.awesome-features h2{
+    padding-bottom: clamp(57px, 0.06667vw + 54.5px, 128px);
+
+}
+
+.selected-line h4{
+    color: var(--text-dark);
+    font-weight: 700;
+    line-height: 140%;
+    padding-bottom: 16px;
+    font-size: clamp(16px, 0.188vw + 15.3px, 18px);
+}
+
+.selected-line p{
+    color: var(--text-dark);
+    font-weight: 500;
+    line-height: 160%;
+    font-size: 16px;
+    padding-bottom: 40px;
+}
+
+.lines{
+    display: flex;
+    color: var(--text-average);
+    font-weight: 700;
+    /* falta tamanho da font */
+    line-height: 140%;
+    padding-bottom: 40px;
+    font-size: clamp(16px, 0.188vw + 15.3px, 18px);
+    justify-content: space-between;
+
+}
+
+.lines img{
+    display: block;
+    height: 24px;
+    width: 24px;
+}
 
 .card-contact-us{
     background-color: var(--primary-color);
     border-radius: 16px;
+    padding: 37px 30px 36px 44px;
 }
 
 .card-contact-us h2{
@@ -294,13 +334,142 @@ h2{
     font-weight: 700;
     line-height: 120%;
     text-align: left;
+    padding-bottom: 16px;
+}
+
+.card-contact-us p{
+    font-size: 16px;
+    line-height: 160%;
+    color: var(--text-light);
+    font-weight: 350;
+    padding-bottom: 40px;
+}
+
+.card-contact-us a{
+    padding: 16px 32px ;
+    display: inline-block;
+    background-color: var(--text-light);
+    color: var(--primary-color);
+    border-radius: 100px;
+    text-decoration:  none;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+}
+
+.contact-us{
+    padding-bottom: clamp(88px, 1vw + 83px, 101px);
+}
+
+.sites{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding-top: 55px;
+    padding-bottom: 148px;
+    gap: 30px 24px ;
+}
+
+.logos{
+    width: 170px;
+    height: 96px;
+    text-align: center;
+    align-content: center;
+    border-radius: 16px;
+    box-shadow: 0px 30px 40px rgba(212, 217, 232, 0.2);  
+}
+
+.footer{
+    padding-top: clamp(52px, 2.63vw + 42.15px, 80px);
+    background-color: var(--background-color);
+}
+
+.cima h2{
+    text-align: left;
+    padding: 0px;
+    padding-bottom: clamp(16px, 0.75vw + 13.2px, 24px);
+    line-height: 120%;
+}
+
+.cima p{
+    color: var(--text-average);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    padding-bottom: clamp(41px, calc(4.41vw + 24.47px), 88px);
+}
+
+.footer a{
+    display: inline-block;
+    padding: 16px 32px 16px 32px;
+    background-color:  var(--primary-color);
+    border-radius: 100px;
+    color: var(--text-light);
+    text-decoration: none;
+    font-weight: 700;
+    line-height: 150%;
+    text-align: center;
+    margin-top: 1rem ;
+    margin-bottom: 75px ;
 }
 
 
+input{
+    text-decoration: none;
+    border: 0;
+    background-color: var(--background-color);
+    font-size: 16px ;
+    color: var(--text-average);
+    font-weight: 500;
+}
 
+.buttom::after{
+    display: block;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #CFC1BD;
+    margin-top: 16px;
+}
 
+.social{
+    margin: auto 0;
+    text-align: center;
+}
 
+.social img{
+    width: 20px;
+    height: 20px;
+}
+.social-img{
+    display: flex;
+    gap: 24px;
+    margin: 0 auto;
+    justify-content: center;
+    margin-bottom: 40px;
+}
 
+.privacy{
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    line-height: 150%;
+    margin-bottom: 56px ;
+}
+
+.privacy h5{
+    font-size: 14px;
+    font-weight: 400;
+}
+
+#reserved{
+    padding-bottom: 50px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 150%;
+
+}
 
 @media (min-width: 768px){
 
@@ -343,5 +512,7 @@ h2{
         padding-top: 80px;
 
     }
+
+
 
 }
