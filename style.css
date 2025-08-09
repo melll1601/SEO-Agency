@@ -28,8 +28,8 @@ body{
 }
 
 .container{
-    padding-left: clamp(20px, 7vw, 120px);
-    padding-right: clamp(20px, 7vw, 120px);
+    padding-left: clamp(20px, 5vw, 120px);
+    padding-right: clamp(24px, 2.63vw, 120px);
     padding-top: 3.2vw;
     position: relative;
 }
@@ -42,16 +42,20 @@ body{
     justify-items: center;
     align-items: center;
     background-color: var(--background-color);
-    padding-bottom: clamp(40px, 9.7vw ,114px);
+    padding-left: clamp(20px, 5vw, 120px);
+    padding-right:clamp(20px, 5vw, 120px) ;
 }
 
 .logo-coca img{
-    width: clamp(120px, 5vw, 140px);
+    width: clamp(120px, 20.9vw, 140px);
+    padding-top: clamp(12px, 2.4vw, 24px);
 }
 
 #menu-smartphone img{
     display: block;
-    width: 25px;
+    width: 24px;
+    height: 24px;
+    padding: 0px;
 }
 
 .menu-desktop{
@@ -66,10 +70,10 @@ body{
     font-weight: 700;
     font-family: 'Archivo', sans-serif;
     line-height: 120%;
-    font-size: clamp(36px, 3.38vw, 72px);
+    font-size: clamp(36px, 7.3vw, 72px);
     padding-bottom: clamp(20px, 3vw, 32px);
+    padding-top: clamp(39.43px, 9.3vw, 114px);
 }
-
 
 .hero p{
 
@@ -77,6 +81,10 @@ body{
     font-weight: 500;
     color: var(--text-average);
     padding-bottom: clamp(24px, 3vw, 40px);
+}
+
+.img-header{
+    display: none;
 }
 
 #button {
@@ -106,16 +114,17 @@ body{
 }
 
 
-
-.sites-desktop{
-    display: none;
-}
-.sites-smartphone{
-    max-width: 375px;
+.sites{
+    max-width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    width: 100%;
+    padding: 0px 6px 0px 6px;
+    margin-top: clamp(55px, 9.9vw, 75px);
+    margin-bottom: clamp(148px, 25.15vw, 156px);
+    gap: 30px 24px ;
+
+
 }
 
 h2{
@@ -137,7 +146,8 @@ h2{
     height: 291px;
     margin: 0 auto;
     border-radius: 16px;
-    margin-bottom: 60px;
+    margin-bottom: clamp(64px, 12.56vw, 116px);
+;
 }
 
 .card h3{
@@ -362,14 +372,7 @@ h2{
     padding-bottom: clamp(88px, 1vw + 83px, 101px);
 }
 
-.sites{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    padding-top: 55px;
-    padding-bottom: 148px;
-    gap: 30px 24px ;
-}
+
 
 .logos{
     width: 170px;
@@ -471,19 +474,115 @@ input{
 
 }
 
+.logo-oyo{
+    display: none;
+}
+
+.logo-walmart{
+    display: none;
+}
+
+.cards h3{
+    width: 100%;
+}
+
+
+#overlay-teamvideo{
+    display: flex;
+    background: #fff;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.05);
+    width: 329px;
+    height: 96px;
+    align-items: center;
+}
+
+#overlay-text h5{
+    font-weight: 700;
+    font-size: calc(2rem - 8px);
+}
+
+#overlay-text p{
+    font-size: 1rem;
+    line-height: 160%;
+    font-weight: 400;
+}
+
+.team-icon{
+    align-items: center;
+}
+
+#team-icons img{
+    max-width: 120px;
+    height: 54px;
+    
+
+}
+
+
 @media (min-width: 768px){
+
+    .container{
+        padding: 0rem 7.5rem 0rem 7.5rem;
+    }
 
     #menu-smartphone{
         display: none;
     }
 
+    .header-inner{
+        display: flex;
+        justify-content: flex-start;
+        gap: 65px ;
+        padding: 0rem 0rem 0rem 7.5rem;
+
+    }
+
     .menu-desktop{
         display: flex;
+        gap: 32px;
+        list-style: none;
+        font-size: 1rem;
+        color: var(--text-average);
+        padding-top: clamp(12px, 2.4vw, 24px);
+    }
+
+    .menu-desktop a{
+        text-decoration: none;
+        color: var(--text-average);
+        line-height: 150%;
+        font-weight: 400;
+    }
+
+    .img-header{
+        display: block;
+        position: absolute;
+        transform: translateY(+336px);
+        left: 755px;
+    }
+
+    .img-header img{
+        max-width: 650px;
+    }
+
+    .hero p{
+        max-width: 455px;
     }
 
     .img-header-smartphone img{
         display: none;
     }
+
+    #arrow{
+        left: 337px;
+    }
+
+    #About-menudesktop{
+        font-weight: 700;
+        color: var(--primary-color);
+        line-height: 150%;
+    }
+
+
 
     .features-optimizing h2{
         max-width: 50%;
@@ -495,7 +594,10 @@ input{
 
     .cards{
         display: flex;
+        padding: 0px 126px 0px 126px ;
+        width: 100%;
     }
+
 
     .make-your-website{
         display: flex;
@@ -514,5 +616,44 @@ input{
     }
 
 
+    .sites{
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: 1fr;
+        gap: 48px;
+        align-items: center;
+        padding: 0rem 5.625rem 0rem 5.625rem;
+    }
+
+
+    .logo-oyo {
+        display: block;
+    }
+
+    .logo-oyo img{
+        width: 5.25rem;
+    }
+    
+    .logo-walmart{
+        display: block;
+    }
+
+    .logo-walmart img{
+        width: 7.5rem;
+
+    }
 
 }
+
+@media (max-width: 1023px){
+
+    .sites .logo-fedex{
+        order: -2;
+    }
+
+    .sites .logo-amazon{
+        order: -2;
+    }
+
+}
+
