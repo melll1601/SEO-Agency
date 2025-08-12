@@ -218,11 +218,9 @@ h2{
 .optimization-strategies h2{
     text-align: left;
     padding-top: clamp(61px, 8vw, 113px);
-    padding-bottom: clamp(20px, 4vw, 96px);
+    padding-bottom:0px;
     line-height: 120%;
-
     /* FALTA O TAMANHO DA FONTE! */
-
 }
 
 
@@ -251,6 +249,9 @@ h2{
 
 }
 
+.text{
+    padding-top: 32px;
+}
 
 .text p{
     color: var(--text-dark);
@@ -491,7 +492,6 @@ input{
     display: flex;
     background: #fff;
     box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.05);
-    width: 329px;
     height: 96px;
     align-items: center;
 }
@@ -512,10 +512,15 @@ input{
 }
 
 #team-icons img{
-    max-width: 120px;
-    height: 54px;
-    
+    width: 100%;
+    padding: 21px 24px 21px 20px  ;
+}
 
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 180px;
 }
 
 
@@ -643,6 +648,25 @@ input{
 
     }
 
+    .text-column{
+        padding-left: 184px ;
+    }
+
+    .optimization-strategies h2::after{
+        margin-left: 184px ;
+        padding-bottom: 0px;
+    }
+
+    .discover-our-img-desktop{
+        display: flex;
+        gap: 56px;
+    }
+
+    .discover-our-title{
+        display: flex;
+        text-align: center;
+    }
+
 }
 
 @media (max-width: 1023px){
@@ -653,6 +677,10 @@ input{
 
     .sites .logo-amazon{
         order: -2;
+    }
+
+    .desktop {
+    display: none;
     }
 
 }
