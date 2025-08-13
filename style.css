@@ -123,8 +123,6 @@ body{
     margin-top: clamp(55px, 9.9vw, 75px);
     margin-bottom: clamp(148px, 25.15vw, 156px);
     gap: 30px 24px ;
-
-
 }
 
 h2{
@@ -338,6 +336,8 @@ h2{
     background-color: var(--primary-color);
     border-radius: 16px;
     padding: 37px 30px 36px 44px;
+    margin-bottom: clamp(88px, 1.22vw + 83.43px, 101px);
+
 }
 
 .card-contact-us h2{
@@ -369,9 +369,6 @@ h2{
     text-align: center;
 }
 
-.contact-us{
-    padding-bottom: clamp(88px, 1vw + 83px, 101px);
-}
 
 
 
@@ -523,6 +520,32 @@ input{
   min-height: 180px;
 }
 
+.person img{
+    width: 329px;
+    height: 345px;
+}
+
+.person h4{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 150%;
+    padding-bottom: 8px;
+    padding-top: 16px;
+}
+
+.person p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 160%;
+    color: var(--text-average);
+    padding-bottom: clamp(86px, 9.77vw + 49.38px, 190px);
+
+}
+
+.discover-our-title{
+    padding-bottom: clamp(38px, 4vw, 56px);
+}
+
 
 @media (min-width: 768px){
 
@@ -576,6 +599,7 @@ input{
     .img-header-smartphone img{
         display: none;
     }
+    
 
     #arrow{
         left: 337px;
@@ -630,6 +654,9 @@ input{
         padding: 0rem 5.625rem 0rem 5.625rem;
     }
 
+    .logo-walmart{
+        order: 3;
+    }
 
     .logo-oyo {
         display: block;
@@ -659,14 +686,55 @@ input{
 
     .discover-our-img-desktop{
         display: flex;
-        gap: 56px;
+        gap: 32px;
     }
 
     .discover-our-title{
         display: flex;
-        text-align: center;
+        text-align: left;
+        align-items: center;
     }
 
+    .discover-our-title h2{
+        padding: 0px;
+
+    }
+
+    .awesome-features{
+        padding: 0px 223px 0px 223px;
+    }
+
+    .contact-us p{
+        margin-bottom: auto;
+        width: 75%;
+    }
+
+    .card-contact-us{
+    background-color: var(--primary-color);
+    border-radius: 16px;
+    padding: 80px 0px 64px 80px;
+    margin-bottom: clamp(88px, 1.22vw + 83.43px, 101px);   
+    }
+
+    .img-contact-us{
+        position: relative;
+    }
+
+    #arrow2{
+        position: absolute;
+        left: 62%;
+        transform: translateY(-450px);
+    }
+
+    #girl-contact-us{
+        position: absolute;
+        left: 62%;
+        transform: translateY(-548px);
+    }
+
+    .texto{
+        max-width: 58% ;
+    }
 }
 
 @media (max-width: 1023px){
@@ -681,6 +749,10 @@ input{
 
     .desktop {
     display: none;
+    }
+
+    .img-contact-us{
+        display: none;
     }
 
 }
