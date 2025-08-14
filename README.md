@@ -5,6 +5,41 @@ Melissa Rafaela Pereira - MIDS 77
 
 # Descrição do Projeto 📝
 
+Este projeto foi passado pelo professor Kristian Erdmann no dia 31 de julho, tendo como objetivo a criação de um projeto com página web responsiva a partir de ul layout sorteado no figma. O projeto contém versões para dispositivos móveis(375px) e desktop(1440).
+Nosso objetivo é transformar o design visual em um site funcional, com foco em:
+
+<table border="1" cellpadding="10" cellspacing="0">
+    <tbody>
+        <tr>
+            <td>Fidelidade ao design original</td>
+            <td>📥</td>
+        </tr>
+        <tr>
+            <td>Responsividade utilizando abordagem Mobile First</td>
+            <td>🔎</td>
+        </tr>
+        <tr>
+            <td>Uso correto de tags HTML semânticas para melhor estruturação</td>
+            <td>⚙️</td>
+        </tr>
+        <tr>
+            <td>Organização modular do CSS, incluindo uso de variáveis CSS</td>
+            <td>📤</td>
+        </tr>
+        <tr>
+            <td>Separação clara entre estrutura (HTML) e apresentação (CSS)</td>
+            <td>📖</td>
+        </tr>
+        <tr>
+            <td>Documentação clara para facilitar entendimento e manutenção</td>
+            <td>📌</td>
+        </tr>
+    </tbody>
+</table>
+
+<br>
+
+- Link do Figma: https://www.figma.com/proto/Ezj9LSd0qKR1t3fcfmt5HZ/Projeto---Melissa-R.-Pereira---FrontEnd?node-id=0-1&t=IOk5UkjdHhDl5PtT-1
 
 # Estrutura do projeto 🏠
 
@@ -45,11 +80,10 @@ OPÇÃO 1️⃣: Baixando o Arquivo.
 
 OPÇÃO 2️⃣: Clonar com Git.
 Abra o terminal (ou prompt) 🖥️
-
-```bash
+````
+bash
 git clone https://github.com/usuario/repositorio.git
-```
-
+````
 
 
 
@@ -57,9 +91,10 @@ git clone https://github.com/usuario/repositorio.git
 
 
 # Processo 👩‍💻
+No primeiro dia de desenvolvimento, comecei a criação do projeto analisando o Figma fornecido e definindo quais seções poderiam ser implementadas, além de identificar as fontes que precisaria importar. Com essa base, iniciei a construção do HTML, seguindo os elementos previamente vistos.
 
+Após concluir o HTML, passei para o CSS, adotando a abordagem mobile first. Primeiro, importei as fontes e defini as variáveis root dos estilos. Em seguida, desenvolvi o código voltado para dispositivos mobiles. Com essa etapa finalizada, iniciei a construção da versão desktop, utilizando media queries para garantir a responsividade.
 
+<br>
 
-
-
-
+- Desafios: A parte mais difícil do desenvolvimento foi criar imagens que ficavam sobrepostas, pois foi algo que eu não havia visto ainda e foi um grande desafio entender como fazer e deixar responsivo. Além disso, o tempo de elaboração do projeto, pois percebi que, mesmo melhorando meus conhecimentos a respeito, ainda tenho dificuldades em desenvolver front-end com rapidez.
