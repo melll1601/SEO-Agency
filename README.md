@@ -60,7 +60,7 @@ SEO-AGENCY
 
 # Preview 👾
 
-<img align= "center" loading="Rodando o projeto" src="/assets/assets-readme/smartphone - readme.mp4" width="100%"/>
+<img align= "center" loading="Rodando o projeto" src="/assets/assets-readme/smartphone-readme.gif" width="100%"/>
 
 
 
