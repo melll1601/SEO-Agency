@@ -1,6 +1,9 @@
-# SEO Agency 🪪
+# Atividade Avaliativa - SEO Agency 🪪
 
-Melissa Rafaela Pereira - MIDS 77
+👤 Melissa Rafaela Pereira - 81795
+
+
+📖 Aprendizagem Industrial em Desenvolvimento de Sistemas - WEG - AI MIDS 77
 
 
 # Descrição do Projeto 📝
@@ -41,7 +44,7 @@ Nosso objetivo é transformar o design visual em um site funcional, com foco em:
 
 - Link do Figma: https://www.figma.com/proto/Ezj9LSd0qKR1t3fcfmt5HZ/Projeto---Melissa-R.-Pereira---FrontEnd?node-id=0-1&t=IOk5UkjdHhDl5PtT-1
 
-# Estrutura do projeto 🏠
+# Estrutura 🏠
 
 ````
 SEO-AGENCY
@@ -55,6 +58,7 @@ SEO-AGENCY
 
 ````
 
+# Preview 👾
 
 # Tecnologias Utilizadas 
 
@@ -72,34 +76,28 @@ SEO-AGENCY
 # Como Rodar 📤
 
 
-OPÇÃO 1️⃣: Baixando o Arquivo.
+OPÇÃO 1️⃣: 
 
 01) Baixando o projeto.ZIP: Baixe o arquivo do projeto no link mencionado anteriormente, para isto você deve clicar em **<> Code** especificada em azul/verde, e selecionar a opção baixar Download ZIP.
 
 
-2) Extrair o arquivo.ZIP: Após baixar o arquivo.ZIP, encontre ele na pasta downloads e extraia o arquivo.
+2) Extrair o arquivo.ZIP: Após baixar o arquivo.ZIP, encontre ele na pasta downloads e extraia o arquivo. 
 
 
-3) Abra a IDE: Abra a IDE que deseja executar o projeto, como o VScode, por exemplo.
+3) Abra o arquivo index.html: Após extrair a pasta SEO-AGENCY entre nela abra o arquivo index.html - Você pode fazer isso de duas formas:
 
+   - Clicando duas vezes no arquivo (modo mais rápido).
+   - Usando um servidor local com extensão live server.
 
-4) Importando o projeto: Importe o projeto, a localização dependrá da IDE que você vai utilizar.
-
-
-<p>    </p>
 
 <br>
 
 OPÇÃO 2️⃣: Clonar com Git.
-Abra o terminal (ou prompt) 🖥️
+Se você não desejar baixar o arquivo, você pode fazer acessar via terminal (ou prompt) 🖥️
 ````
 bash
 git clone https://github.com/usuario/repositorio.git
 ````
-
-
-
-# Preview do Projeto 👾
 
 
 # Processo 👩‍💻
