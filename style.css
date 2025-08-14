@@ -145,7 +145,6 @@ h2{
     margin: 0 auto;
     border-radius: 16px;
     margin-bottom: clamp(64px, 12.56vw, 116px);
-;
 }
 
 .card h3{
@@ -259,7 +258,7 @@ h2{
     line-height: 160%;
 }
 
-.text a{
+.text-column a{
     display: inline-block;
     background-color: var(--primary-color);
     color: var(--text-light);
@@ -382,7 +381,7 @@ h2{
 }
 
 .footer{
-    padding-top: clamp(52px, 2.63vw + 42.15px, 80px);
+    padding-top: clamp(50px, 6vw, 80px);
     background-color: var(--background-color);
 }
 
@@ -520,10 +519,6 @@ input{
   min-height: 180px;
 }
 
-.person img{
-    width: 329px;
-    height: 345px;
-}
 
 .person h4{
     font-size: 24px;
@@ -547,7 +542,15 @@ input{
 }
 
 
-@media (min-width: 768px){
+#overlay-teamvideo{
+    display: none;
+}
+
+.footer-questions{
+    display: none;
+}
+
+@media (min-width: 1024px){
 
     .container{
         padding: 0rem 7.5rem 0rem 7.5rem;
@@ -589,7 +592,7 @@ input{
     }
 
     .img-header img{
-        max-width: 650px;
+        width: 650px;
     }
 
     .hero p{
@@ -627,6 +630,12 @@ input{
         width: 100%;
     }
 
+    .text-op{
+        display: flex;
+        justify-content: space-between;
+        gap: 156px
+    }
+
 
     .make-your-website{
         display: flex;
@@ -643,7 +652,6 @@ input{
         padding-top: 80px;
 
     }
-
 
     .sites{
         display: grid;
@@ -682,6 +690,7 @@ input{
     .optimization-strategies h2::after{
         margin-left: 184px ;
         padding-bottom: 0px;
+        width:1016px ;
     }
 
     .discover-our-img-desktop{
@@ -728,16 +737,133 @@ input{
 
     #girl-contact-us{
         position: absolute;
-        left: 62%;
+        right: 1%;
         transform: translateY(-548px);
     }
 
     .texto{
         max-width: 58% ;
     }
+
+
+    .lines{
+        align-items: center;
+    }
+
+
+    .footer{
+        padding-top: clamp(50px, 6vw, 80px);
+    }
+
+    .footer p {
+
+        max-width: 359px;
+
+    }
+
+    .button-input{
+        display: flex;
+        align-items: center;
+    }
+
+    .button-input a{
+        margin: 0px;
+    }
+
+    .footer-question-text{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .questions{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .question{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+
+    .footer-questions h3{
+        font-weight: 700;
+        font-size: calc(2rem - 8px);
+        line-height: 140%;
+        padding-bottom: 46px ;
+    }
+
+    .footer-questions{
+        display: block;
+    }
+
+    .footer-questions h5{
+        color: var(--text-average);
+        font-weight: 400;
+        font-size: calc(1rem + 2px);
+        line-height: 120%;
+    }
+
+    .footer-questions img{
+        width: 24px ;
+        height: 24px;
+    }
+
+    .question h5::after{
+        display: block;
+        content: "";
+        width: 401px;
+        height: 1px;
+        background-color: #D6D6D6;
+        margin-top: 24px;
+        margin-bottom: 24px ;
+    }
+
+    #question{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    
+    .social::before{
+        display: block;
+        content: "";
+        width: 1200px;
+        height: 1px;
+        background-color: #D6D6D6;
+        margin-top: 112px;
+        margin-bottom: 40px ;
+    }
+
+    .social-img {
+        margin: 0px;
+    }
+
+    .privacy{
+        gap: 40px;
+        margin-left: 72px;
+    }
+
+    .footer-baixo{
+        display: flex;
+        margin: 0px;
+        justify-content: space-between;
+    }
+
+    .buttom::after{
+         display: block;
+        content: "";
+        width: 353px;
+        height: 1px;
+        background-color: #CFC1BD;
+        margin-top: 16px;
+        margin-right: 16px;
+    }
+
 }
 
-@media (max-width: 1023px){
+ @media screen and (min-width: 375px) and (max-width: 768px){
 
     .sites .logo-fedex{
         order: -2;
@@ -755,5 +881,33 @@ input{
         display: none;
     }
 
+    .person img{
+        width: 100% ;
+        margin: 0 auto;
+    }
+
 }
 
+
+ @media screen and (min-width: 768px) and (max-width: 1024px){
+    
+    .sites{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .footer-questions{
+        display: none;
+    }
+
+    #girl-contact-us{
+        display: none;
+    }
+
+    #arrow2{
+        display: none;
+    }
+
+
+
+}

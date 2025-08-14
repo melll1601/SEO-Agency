@@ -60,6 +60,14 @@ SEO-AGENCY
 
 # Preview 👾
 
+<p align="center">
+  <img src="/assets/assets-readme/smartphone - readme.mp4" width="49%" controls></img>
+  <img src="/assets/video2.mp4" width="49%" controls></img>
+</p>
+
+
+
+
 # Tecnologias Utilizadas 
 
 <div style="display: inline-block">
