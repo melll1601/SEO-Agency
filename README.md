@@ -43,6 +43,18 @@ Nosso objetivo é transformar o design visual em um site funcional, com foco em:
 
 # Estrutura do projeto 🏠
 
+````
+SEO-AGENCY
+└── assets
+└── fonts
+    ├── Archivo
+    └── Inter
+├── index.html
+├── README.md
+└── style.css
+
+````
+
 
 # Tecnologias Utilizadas 
 
