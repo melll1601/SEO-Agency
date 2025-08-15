@@ -116,7 +116,7 @@ body{
 
 /* SITES */
 
-.sites{
+.logos-partnerships{
     max-width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -625,7 +625,7 @@ input{
         padding-top: 40px;
     }
 
-    .cards{
+    .card-features-optimizing{
         display: flex;
         padding: 0px 126px 0px 126px ;
         width: 100%;
@@ -654,7 +654,7 @@ input{
 
     }
 
-    .sites{
+    .logos-partnerships{
         display: grid;
         grid-template-columns: repeat(6, 1fr);
         grid-template-rows: 1fr;
@@ -869,11 +869,11 @@ input{
 
  @media screen and (min-width: 0px) and (max-width: 768px){
 
-    .sites .logo-fedex{
+    .logos-partnerships .logo-fedex{
         order: -2;
     }
     
-    .sites .logo-amazon{
+    .logos-partnerships .logo-amazon{
         order: -2;
     }
 
@@ -901,7 +901,7 @@ input{
 
  @media screen and (min-width: 768px) and (max-width: 1124px){
     
-    .sites{
+    .logos-partnerships{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
     }
@@ -933,7 +933,7 @@ input{
     }
 
 
-    .sites{
+    .logos-partnerships{
         display:  grid;
         grid-template-columns: repeat(3, 1fr);
     }
