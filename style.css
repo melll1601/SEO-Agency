@@ -70,7 +70,6 @@ body{
 
 .hero{
     background-color: var(--background-color);   
-    display: flex; 
     justify-content: space-between;
 }
 
@@ -88,11 +87,9 @@ body{
     font-weight: 500;
     color: var(--text-average);
     padding-bottom: clamp(24px, 3vw, 40px);
+    width: 100%;
 }
 
-.hero-left{
-    width: 60%;
-}
 
 
 
@@ -134,6 +131,11 @@ body{
     margin-bottom: clamp(148px, 25.15vw, 156px);
     gap: 30px 24px ;
 }
+
+.logos img{
+    max-width: 100%;
+}
+
 
 h2{
     font-weight: 700;
@@ -564,7 +566,7 @@ input{
         margin: 0 auto;
     }
 
-@media (min-width: 1124px){
+@media (min-width: 1270px){
 
     .container{
         padding: 0rem 7.5rem 0rem 7.5rem;
@@ -600,15 +602,19 @@ input{
 
     .img-header{
         display: block;
-             position: absolute;
-     transform: translateY(-100px);
-     right: 0;
-     top: 0;
+        position: absolute;
+        right: 37px;
+        top: 0;
 
     }
 
+    .hero-left{
+        padding-right: 98px;
+    }
+
     .img-header img{
-        width: 650px;
+        max-width: 600px;
+        height: auto;
     }
 
     .hero p{
@@ -670,13 +676,17 @@ input{
     }
 
     .logos-partnerships{
+        max-width: 1260px;
         display: grid;
         grid-template-columns: repeat(6, 1fr);
         grid-template-rows: 1fr;
         gap: 48px;
         align-items: center;
-        padding: 0rem 5.625rem 0rem 5.625rem;
+        margin: 0 auto;
     }
+
+
+
 
     .logo-walmart{
         order: 3;
@@ -915,7 +925,7 @@ input{
     }
 }
 
- @media screen and (min-width: 768px) and (max-width: 1124px){
+ @media screen and (min-width: 768px) and (max-width: 1270px){
     
     .logos-partnerships{
         display: grid;
@@ -948,9 +958,38 @@ input{
         grid-template-rows: 1fr 1fr;
     }
 
+    .img-header-smartphone{
+        display: none;
+    }
+
+    .img-header{
+        display: block;
+    }
 
     .logos-partnerships{
         display:  grid;
         grid-template-columns: repeat(3, 1fr);
     }
+
+    .hero p{
+    width: 70%;
+    }
+
  }
+
+  @media screen and (min-width: 1024px) and (max-width: 1270px){
+    .hero{
+        display: flex;
+    }
+
+    .img-header img{
+        width: 500px;
+        height: auto;
+        /* BOTAR MARGIN TOP */
+    }
+
+
+
+
+  }
+
