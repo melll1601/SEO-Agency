@@ -170,8 +170,9 @@ h2{
 .card p{
     font-size: 16px ;
     margin: 0px 24px 24px 24px ;
-    line-height: 150%;
+    line-height: 160%;
     color: var(--text-average);
+    font-weight: 500;
 }
 
 .optimize-page-content{
@@ -193,6 +194,8 @@ h2{
     color: var(--text-average);
     font-size: 16px;
     padding-bottom: clamp(40px, 1.5vw + 34.4px, 56px);
+    font-weight: 500;
+    line-height: 160%;
 }
 
 .numbers{
@@ -207,6 +210,7 @@ h2{
     margin-bottom: 8px;
     padding-bottom: 0px;
     font-size: clamp(36px, 0.38vw + 34.6px, 40px);
+    line-height: 120%;
 }
 
 .numbers p{
@@ -214,6 +218,7 @@ h2{
     font-weight: 500;
     font-size: 16px;
     padding-bottom: clamp(72px, 7.7vw + 43.1px, 154px);
+    line-height: 160%;
 
 }
 
@@ -738,7 +743,7 @@ margin-left: 15.95%;
 
     .video-with-remote-team img{
         max-width: 378px;
-        padding-top: 80px;
+        padding: 80px 0px;
 
     }
 
@@ -822,6 +827,9 @@ margin-left: 15.95%;
     .content{
         flex-direction: column;
     }
+
+
+
 
 
     .logo-walmart{
