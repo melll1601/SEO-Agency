@@ -3,12 +3,15 @@
     src: url(/fonts/fonts/Archivo/Archivo-VariableFont_wdth\,wght.ttf) format('truetype');
 }
 
+
 @font-face {
     font-family: 'Inter';
     src: url(/fonts/fonts/Inter/Inter-VariableFont_opsz\,wght.ttf) format('truetype');
 }
 
+
 :root{
+
 
     --text-dark: #101010;
     --text-light: #FFFFFF;
@@ -17,15 +20,27 @@
     --background-color: #FFF1ED;
 }
 
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+
 body{
     font-family: 'Inter', sans-serif;
 }
+
+
+/* ---- */
+.container{
+    padding-left: clamp(24px, 5vw, 120px);
+    padding-right: clamp(24px, 2.63vw, 120px);
+    padding-top: 3.2vw;
+    position: relative;
+}
+
 
 h2{
     font-weight: 700;
@@ -35,14 +50,8 @@ h2{
 }
 
 
-.container{
-    padding-left: clamp(20px, 5vw, 120px);
-    padding-right: clamp(24px, 2.63vw, 120px);
-    padding-top: 3.2vw;
-    position: relative;
-}
+/* HEADER INNER */
 
-/* HEADER */
 
 .header-inner{
     display: flex;
@@ -54,10 +63,17 @@ h2{
     padding-right:clamp(20px, 5vw, 120px) ;
 }
 
+
 .logo-coca img{
     width: clamp(120px, 20.9vw, 140px);
     padding-top: clamp(12px, 2.4vw, 24px);
 }
+
+
+.menu-desktop{
+    display: none;
+}
+
 
 #menu-smartphone img{
     display: block;
@@ -66,20 +82,15 @@ h2{
     padding: 0px;
 }
 
-.menu-desktop{
-    display: none;
-}
 
-.img-header{
-    display: none;
-}
+/* HERO */
 
-/*  HERO  */
 
 .hero{
-    background-color: var(--background-color);   
+    background-color: var(--background-color);  
     justify-content: space-between;
 }
+
 
 .hero h1{
     font-weight: 700;
@@ -90,6 +101,7 @@ h2{
     padding-top: clamp(39.43px, 9.3vw, 114px);
 }
 
+
 .hero p{
     font-size: 16px;
     font-weight: 500;
@@ -97,8 +109,6 @@ h2{
     padding-bottom: clamp(24px, 3vw, 40px);
     width: 100%;
 }
-
-
 
 
 #button {
@@ -111,6 +121,7 @@ h2{
     position: relative;
     margin-bottom: 16.6%;
 }
+
 
 #arrow{
     position: absolute;
@@ -127,7 +138,16 @@ h2{
     padding-bottom: 12%;
 }
 
+
+.img-header{
+    display: none;
+}
+
+
+
+
 /* SITES */
+
 
 .logos-partnerships{
     max-width: 100%;
@@ -140,11 +160,28 @@ h2{
     gap: 30px 24px ;
 }
 
+
+
+
 .logos img{
     max-width: 100%;
 }
 
+
+.logos{
+    width: 170px;
+    height: 96px;
+    text-align: center;
+    align-content: center;
+    border-radius: 16px;
+    box-shadow: 0px 30px 40px rgba(212, 217, 232, 0.2);  
+    margin:  0 auto;
+    align-items: center;
+}
+
+
 /* CARDS FEATURES OPTIMIZING */
+
 
 .features-optimizing h2{
     padding-bottom: 56px;
@@ -156,6 +193,9 @@ h2{
     margin: 20.5px 196px 56px 24px;
 }
 
+
+
+
 .card{
     width: 276px;
     height: 291px;
@@ -164,12 +204,18 @@ h2{
     margin-bottom: clamp(64px, 12.56vw, 116px);
 }
 
+
+
+
 .card h3{
     font-size: 18px;
     margin: 0px 48px 12px 24px;
     font-weight: 700;
     line-height: 120%;
 }
+
+
+
 
 .card p{
     font-size: 16px ;
@@ -179,20 +225,27 @@ h2{
     font-weight: 500;
 }
 
+
+
+
 .optimize-page-content{
     background-color: var(--background-color);
 }
 
+
 /* MAKE YOUR WEBSITE */
+
 
 .make-your-website{
     background-color: var(--background-color);
 }
 
+
 .make-your-website h2{
     text-align: left;
     padding-bottom: 32px ;
 }
+
 
 .make-your-website p{
     color: var(--text-average);
@@ -202,10 +255,16 @@ h2{
     line-height: 160%;
 }
 
+
+
+
 .numbers{
     display: flex;
     gap: 45px ;
 }
+
+
+
 
 .numbers h2{
     text-align: left;
@@ -217,14 +276,17 @@ h2{
     line-height: 120%;
 }
 
+
+
+
 .numbers p{
     color: var(--text-average);
     font-weight: 500;
     font-size: 16px;
     padding-bottom: clamp(72px, 7.7vw + 43.1px, 154px);
     line-height: 160%;
-
 }
+
 
 .video-with-remote-team img{
     margin: 0 auto;
@@ -234,43 +296,60 @@ h2{
     padding-bottom: 14% ;
 }
 
+
+#overlay-teamvideo{
+    display: flex;
+    background: #fff;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.05);
+    height: 96px;
+    align-items: center;
+
+
+}
+
+
+#overlay-text h5{
+    font-weight: 700;
+    font-size: calc(2rem - 8px);
+}
+
+
+#overlay-text p{
+    font-size: 1rem;
+    line-height: 160%;
+    font-weight: 400;
+}
+
+
+.team-icon{
+    align-items: center;
+}
+
+
+#team-icons img{
+    width: 100%;
+    padding: 21px 24px 21px 20px  ;
+}
+/* FALTA FAZER */
+
+
+
+
+#overlay-teamvideo{
+    display: none;
+}
+
+
 /* OPTIMIZATION STRATEGIES */
+
+.optimization-strategies{
+    padding-bottom:  clamp(136px, calc(136px + (37 * (100vw - 375px) / 1065)), 173px);
+}
 
 .optimization-strategies h2{
     text-align: left;
     padding-top: clamp(61px, 8vw, 113px);
-    padding-bottom:0px;
-    line-height: 120%;
-    /* FALTA O TAMANHO DA FONTE! */
-}
-
-
-
-.text::after{
-    display: block;
-    content: "";
-    width: 100%;
-    height: 1px;
-    background-color: #D6D6D6;
-    margin-top: 50px;
-}
-
-.text h3{
-    font-weight: 700;
-    color: var(--text-dark);
-    font-size: 24px ;
-}
-
-.text{
-    padding-top: 32px;
-}
-
-.text p{
-    color: var(--text-dark);
-    font-weight: 400;
-    font-size: clamp(16px, 1.2vw, 18px);
-    letter-spacing: 0px;
-    line-height: 160%;
+    padding-bottom: 0px;
 }
 
 .text-optimization-table a{
@@ -285,11 +364,69 @@ h2{
     margin-top: clamp(54px, 4.5vw, 66px);
 }
 
+
+.text-optimization-table{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 15.95%;
+}
+
+.title{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+}
+
+.content{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+    max-width: 493px;
+}
+
+.text-optimization-strategies::after{
+    display: block;
+    content: "";
+    max-width: 100%;
+    height: 1px;
+    background-color: #D6D6D6;
+    margin-top: 60px;
+    margin-bottom: 32px;
+    margin-left: 15.95%;
+}
+
+.optimization-strategies h2::after{
+display: block;
+content: "";
+height: 1px;
+background-color: #D6D6D6;
+margin-top: 50px;
+margin-bottom: 32px;
+margin-left: 15.95%;
+}
+
+.text-optimization-table a{
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    border-radius: 100px ;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 16px 32px 16px 32px;
+    margin-top: clamp(54px, 5vw, 66px);
+}
+
+/* DISCOVER OUR */
+
+
 .discover-our h2{
     text-align: left;
     padding-top: clamp(61px, 8vw, 113px);
     padding-bottom: clamp(20px, 4vw, 96px);
 }
+
 
 .discover-our p{
     color: var(--text-average);
@@ -298,25 +435,80 @@ h2{
     font-size: 16px ;
 }
 
+
 .discover-our-img-smartphone{
     margin: 0 auto;
     max-width: 100%;
     display: block;
-    /* TIREI A IMG PQ NAO TAVA CONSEGUINDO */
 }
 
-.awesome-features h2{
-    padding-bottom: clamp(57px, 0.06667vw + 54.5px, 128px);
 
+.person img {
+    max-width: 100% ;
+    margin: 0 auto;
 }
 
-.selected-line h4{
+
+.person{
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+
+.discover-our-img-desktop{
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    max-width: 100%;
+}
+
+
+.person h4{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 150%;
+    padding-bottom: 8px;
+    padding-top: 16px;
+}
+
+
+.person p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 160%;
+    color: var(--text-average);
+    padding-bottom: clamp(86px, 9.77vw + 49.38px, 190px);
+}
+
+
+.discover-our-title{
+    padding-bottom: clamp(38px, 4vw, 56px);
+}
+
+
+.person img{
+    max-width: 100% ;
+    margin: 0 auto;
+}
+
+
+/* AWESOME FEATURES */
+
+
+.awesome-features p{
+    max-width: 280px;
+}
+
+
+#title-selected{
+    padding-bottom: 0px;
     color: var(--text-dark);
     font-weight: 700;
     line-height: 140%;
-    padding-bottom: 16px;
     font-size: clamp(16px, 0.188vw + 15.3px, 18px);
+    padding-bottom: 16px;
 }
+
 
 .selected-line p{
     color: var(--text-dark);
@@ -326,17 +518,17 @@ h2{
     padding-bottom: 40px;
 }
 
+
 .lines{
     display: flex;
     color: var(--text-average);
     font-weight: 700;
-    /* falta tamanho da font */
     line-height: 140%;
     padding-bottom: 40px;
     font-size: clamp(16px, 0.188vw + 15.3px, 18px);
     justify-content: space-between;
-
 }
+
 
 .lines img{
     display: block;
@@ -344,13 +536,17 @@ h2{
     width: 24px;
 }
 
+
+/* CONTACT US */
+
+
 .card-contact-us{
     background-color: var(--primary-color);
     border-radius: 16px;
     padding: 37px 30px 36px 44px;
     margin-bottom: clamp(88px, 1.22vw + 83.43px, 101px);
-
 }
+
 
 .card-contact-us h2{
     color: var(--text-light);
@@ -360,13 +556,15 @@ h2{
     padding-bottom: 16px;
 }
 
+
 .card-contact-us p{
     font-size: 16px;
     line-height: 160%;
     color: var(--text-light);
-    font-weight: 350;
+    font-weight: 400;
     padding-bottom: 40px;
 }
+
 
 .card-contact-us a{
     padding: 16px 32px ;
@@ -382,42 +580,33 @@ h2{
 }
 
 
-
-
-.logos{
-    width: 170px;
-    height: 96px;
-    text-align: center;
-    align-content: center;
-    border-radius: 16px;
-    box-shadow: 0px 30px 40px rgba(212, 217, 232, 0.2);  
-    margin:  0 auto;
-    align-items: center;
-}
-
-
-
+/* FOOTER */
 
 
 .footer{
     padding-top: clamp(50px, 6vw, 80px);
     background-color: var(--background-color);
+    padding-left: 32px ;
+    padding-right: 30px;
 }
 
-.cima h2{
+
+.ready-started h2{
     text-align: left;
     padding: 0px;
     padding-bottom: clamp(16px, 0.75vw + 13.2px, 24px);
     line-height: 120%;
 }
 
-.cima p{
+
+.ready-started p{
     color: var(--text-average);
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
     padding-bottom: clamp(41px, calc(4.41vw + 24.47px), 88px);
 }
+
 
 .footer a{
     display: inline-block;
@@ -443,6 +632,7 @@ input{
     font-weight: 500;
 }
 
+
 .buttom::after{
     display: block;
     content: "";
@@ -452,15 +642,19 @@ input{
     margin-top: 16px;
 }
 
+
 .social{
     margin: auto 0;
     text-align: center;
 }
 
+
 .social img{
     width: 20px;
     height: 20px;
 }
+
+
 .social-img{
     display: flex;
     gap: 24px;
@@ -468,6 +662,7 @@ input{
     justify-content: center;
     margin-bottom: 40px;
 }
+
 
 .privacy{
     display: flex;
@@ -477,185 +672,103 @@ input{
     margin-bottom: 56px ;
 }
 
+
 .privacy h5{
     font-size: 14px;
     font-weight: 400;
 }
+
 
 #reserved{
     padding-bottom: 50px;
     font-size: 14px;
     font-weight: 400;
     line-height: 150%;
-
 }
 
-.person img {
-    max-width: 100% ;
-    margin: 0 auto;
-}
-
-.person{
-    max-width: 100%;
-    margin: 0 auto;
-}
-
-.cards h3{
-    width: 100%;
-}
-
-
-#overlay-teamvideo{
-    display: flex;
-    background: #fff;
-    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.05);
-    height: 96px;
-    align-items: center;
-}
-
-#overlay-text h5{
-    font-weight: 700;
-    font-size: calc(2rem - 8px);
-}
-
-#overlay-text p{
-    font-size: 1rem;
-    line-height: 160%;
-    font-weight: 400;
-}
-
-.team-icon{
-    align-items: center;
-}
-
-#team-icons img{
-    width: 100%;
-    padding: 21px 24px 21px 20px  ;
-}
-
-.column {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  min-height: 180px;
-}
-
-
-.person h4{
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 150%;
-    padding-bottom: 8px;
-    padding-top: 16px;
-}
-
-.person p{
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 160%;
-    color: var(--text-average);
-    padding-bottom: clamp(86px, 9.77vw + 49.38px, 190px);
-
-}
-
-.discover-our-title{
-    padding-bottom: clamp(38px, 4vw, 56px);
-}
-
-
-#overlay-teamvideo{
-    display: none;
-}
 
 .footer-questions{
     display: none;
 }
 
-.person img{
-    max-width: 100% ;
-    margin: 0 auto;
-}
 
-.text-optimization-table{
-    display: flex;
-    justify-content: space-between;
-    margin-left: 15.95%;
 
-}
 
-.title{
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 120%;
-}
+@media screen and (min-width: 0px) and (max-width: 768px){
 
-.content{
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 160%;
-    max-width: 493px;
-    
-}
 
-.optimization-strategies{
-    padding-bottom: 173px;
-}
+    .logos-partnerships .logo-fedex{
+        order: -2;
+    }
+   
+    .logos-partnerships .logo-amazon{
+        order: -2;
+    }
 
-.text-optimization-strategies::after{
-    display: block;
-    content: "";
-    max-width: 100%;
-    height: 1px;
-    background-color: #D6D6D6;
-    margin-top: 60px;
-    margin-bottom: 32px;
-    margin-left: 15.95%;
+
+    .desktop {
+    display: none;
+    }
+
+
+    .img-contact-us{
+        display: none;
+    }
+
+
+    .logo-oyo{
+    display: none;
+    }
+
+
+    .logo-walmart{
+    display: none;
+    }
+
+
 }
 
 
-.optimization-strategies h2::after{
-display: block;
-content: "";
-height: 1px;
-background-color: #D6D6D6;
-margin-top: 50px;
-margin-bottom: 32px;
-margin-left: 15.95%;
+
+
+@media screen and (min-width: 768px) and (max-width: 1270px){
+
+
+
+
+
+
 }
 
-
-.text-optimization-table a{
-    display: inline-block;
-    background-color: var(--primary-color);
-    color: var(--text-light);
-    border-radius: 100px ;
-    text-decoration: none;
-    font-weight: 700;
-    font-size: 16px;
-    padding: 16px 32px 16px 32px;
-    margin-top: clamp(54px, 5vw, 66px);
-
-}
 
 
 
 @media (min-width: 1270px){
 
+
     .container{
         padding: 0rem 7.5rem 0rem 7.5rem;
     }
 
+
+
+
     #menu-smartphone{
         display: none;
     }
+
+
+
 
     .header-inner{
         display: flex;
         justify-content: flex-start;
         gap: 65px ;
         padding: 0rem 0rem 0rem 7.5rem;
-
     }
+
+
+
 
     .menu-desktop{
         display: flex;
@@ -666,6 +779,9 @@ margin-left: 15.95%;
         padding-top: clamp(12px, 2.4vw, 24px);
     }
 
+
+
+
     .menu-desktop a{
         text-decoration: none;
         color: var(--text-average);
@@ -673,36 +789,16 @@ margin-left: 15.95%;
         font-weight: 400;
     }
 
+
+
+
     .img-header{
         display: block;
         position: absolute;
         right: 37px;
         top: 0;
-
     }
-
-    .hero-left{
-        padding-right: 98px;
-    }
-
-    .img-header img{
-        max-width: 600px;
-        height: auto;
-    }
-
-    .hero p{
-        max-width: 455px;
-    }
-
-    .img-header-smartphone img{
-        display: none;
-    }
-    
-
-    #arrow{
-        left: 337px;
-    }
-
+ 
     #About-menudesktop{
         font-weight: 700;
         color: var(--primary-color);
@@ -710,42 +806,40 @@ margin-left: 15.95%;
     }
 
 
+    /* HERO */
 
-    .features-optimizing h2{
-        max-width: 50%;
-        text-align: center;
-        margin: 0 auto;
-    }
 
-    .card-features-optimizing{
-        display: flex;
-        padding: 0 clamp(16px, 8vw, 126px);
-        width: 100%;
-        gap: 60px;
-    }
-
-    .text-op{
-        display: flex;
-        justify-content: space-between;
-        gap: 156px
+    .hero-left{
+        padding-right: 98px;
     }
 
 
-    .make-your-website{
-        display: flex;
+
+
+    .img-header img{
+        max-width: 600px;
+        height: auto;
     }
 
-    .text-make-your-website{
-        max-width: 62%;
-        padding-top: 151px;
-        padding-left: 209px ;
+
+
+
+    .hero p{
+        max-width: 455px;
     }
 
-    .video-with-remote-team img{
-        max-width: 378px;
-        padding: 80px 0px;
 
+    .img-header-smartphone img{
+        display: none;
     }
+   
+    #arrow{
+        left: 337px;
+    }
+
+
+    /* SITES */
+
 
     .logos-partnerships{
         max-width: 1260px;
@@ -759,12 +853,102 @@ margin-left: 15.95%;
         margin-bottom: clamp(148px, 25.15vw, 156px);
     }
 
+
+    .logo-walmart{
+        order: 3;
+    }
+
+
+
+
+    .logo-oyo {
+        display: block;
+    }
+
+
+
+
+    .logo-oyo img{
+        width: 5.25rem;
+    }
+   
+    .logo-walmart{
+        display: block;
+    }
+
+
+
+
+    .logo-walmart img{
+        width: 7.5rem;
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+    /* CARDS FEATURES OPTIMIZING */
+
+
+     .features-optimizing h2{
+        max-width: 50%;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+
+    .card-features-optimizing{
+        display: flex;
+        padding: 0 clamp(16px, 8vw, 126px);
+        width: 100%;
+        gap: 60px;
+    }
+
+
+
+
+    /* MAKE YOUR WEBSITE */
+
+
+     .make-your-website{
+        display: flex;
+    }
+
+
+    .text-make-your-website{
+        max-width: 62%;
+        padding-top: 151px;
+        padding-left: 209px ;
+    }
+
+
+    .video-with-remote-team img{
+        max-width: 378px;
+        padding: 80px 0px;
+    }
+
+
+    /* OPTIMIZATION STRATEGIES */
+
+    .optimization-strategies{
+        padding-bottom:  clamp(136px, calc(136px + (37 * (100vw - 375px) / 1065)), 173px);
+
+    }
+
+
     .text-optimization-table{
         display: flex;
         justify-content: space-between;
         margin-left: 15.95%;
-
     }
+
 
     .title{
         font-weight: 700;
@@ -772,21 +956,14 @@ margin-left: 15.95%;
         line-height: 120%;
     }
 
+
     .content{
         font-weight: 400;
         font-size: 18px;
         line-height: 160%;
         max-width: 493px;
-        
     }
 
-    .awesome-features{
-        margin-bottom: 155px;
-    }
-
-    .optimization-strategies{
-        padding-bottom: 173px;
-    }
 
     .text-optimization-strategies::after{
         display: block;
@@ -808,7 +985,7 @@ margin-left: 15.95%;
     margin-top: 50px;
     margin-bottom: 32px;
     margin-left: 15.95%;
-}
+    }
 
 
     .text-optimization-table a{
@@ -821,41 +998,18 @@ margin-left: 15.95%;
         font-size: 16px;
         padding: 16px 32px 16px 32px;
         margin-top: clamp(54px, 5vw, 66px);
-
     }
+
+
+
 
     .content{
         flex-direction: column;
     }
 
 
+    /* DISCOVER OUR */
 
-
-
-    .logo-walmart{
-        order: 3;
-    }
-
-    .logo-oyo {
-        display: block;
-    }
-
-    .logo-oyo img{
-        width: 5.25rem;
-    }
-    
-    .logo-walmart{
-        display: block;
-    }
-
-    .logo-walmart img{
-        width: 7.5rem;
-
-    }
-
-    .text-column{
-        padding-left: 184px ;
-    }
 
     .discover-our-img-desktop{
         display: grid;
@@ -865,31 +1019,55 @@ margin-left: 15.95%;
         margin: 0 auto;
     }
 
+
     .discover-our-title{
         display: flex;
         text-align: left;
         align-items: center;
     }
 
+
     .discover-our-title h2{
         padding: 0px;
+    }
 
+    /* AWESOME FEATURES */
+
+    .selected-line p{
+        max-width: 805px;    
+    }
+
+    .awesome-features h2{
+        max-width: 584px;
+        margin: 0 auto;
+        padding-bottom: 72px;
+    }
+
+    .lines{
+    line-height: 120%;
     }
 
     .awesome-features{
         padding: 0px 223px 0px 223px;
     }
 
+    .lines{
+        align-items: center;
+    }
+
+    /* CONTACT US */
+
     .contact-us p{
         margin-bottom: auto;
         width: 75%;
     }
 
+
     .card-contact-us{
     background-color: var(--primary-color);
     border-radius: 16px;
     padding: 80px 0px 64px 80px;
-    margin-bottom: clamp(88px, 1.22vw + 83.43px, 101px);   
+    margin-bottom: clamp(88px, 1.22vw + 83.43px, 101px);  
     }
 
     .img-contact-us{
@@ -912,20 +1090,14 @@ margin-left: 15.95%;
         max-width: 58% ;
     }
 
-
-    .lines{
-        align-items: center;
-    }
-
+    /* FOOTER */
 
     .footer{
         padding-top: clamp(50px, 6vw, 80px);
     }
 
     .footer p {
-
         max-width: 359px;
-
     }
 
     .button-input{
@@ -951,7 +1123,6 @@ margin-left: 15.95%;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-
     }
 
     .footer-questions h3{
@@ -992,7 +1163,6 @@ margin-left: 15.95%;
         justify-content: space-between;
     }
 
-    
     .social::before{
         display: block;
         content: "";
@@ -1030,102 +1200,4 @@ margin-left: 15.95%;
 
 
 }
-
- @media screen and (min-width: 0px) and (max-width: 768px){
-
-    .logos-partnerships .logo-fedex{
-        order: -2;
-    }
-    
-    .logos-partnerships .logo-amazon{
-        order: -2;
-    }
-
-    .desktop {
-    display: none;
-    }
-
-    .img-contact-us{
-        display: none;
-    }
-
-
-
-
-    .logo-oyo{
-    display: none;
-    }
-
-    .logo-walmart{
-    display: none;
-    }
-}
-
- @media screen and (min-width: 768px) and (max-width: 1270px){
-    
-    .logos-partnerships{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    .footer-questions{
-        display: none;
-    }
-
-    #girl-contact-us{
-        display: none;
-    }
-
-    #arrow2{
-        display: none;
-    }
-
-    .img-header{
-        display: none;
-    }
-
-    .img-header-smartphone{
-        display: block;
-    }
-
-    .discover-our-img-desktop{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-    }
-
-    .img-header-smartphone{
-        display: none;
-    }
-
-    .img-header{
-        display: block;
-    }
-
-    .logos-partnerships{
-        display:  grid;
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    .hero p{
-    width: 70%;
-    }
-
- }
-
-  @media screen and (min-width: 1024px) and (max-width: 1270px){
-    .hero{
-        display: flex;
-    }
-
-    .img-header img{
-        width: 500px;
-        height: auto;
-        /* BOTAR MARGIN TOP */
-    }
-
-
-
-
-  }
 
