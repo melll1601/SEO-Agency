@@ -27,6 +27,14 @@ body{
     font-family: 'Inter', sans-serif;
 }
 
+h2{
+    font-weight: 700;
+    font-family: 'Archivo', sans-serif;
+    font-size: clamp(32px, calc(32px + (16 * (100vw - 375px)) / 1065), 48px);
+    text-align: center;
+}
+
+
 .container{
     padding-left: clamp(20px, 5vw, 120px);
     padding-right: clamp(24px, 2.63vw, 120px);
@@ -127,7 +135,7 @@ body{
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     padding: 0px 6px 0px 6px;
-    margin-top: clamp(56px, 5vw, 75px);
+    margin-top: clamp( 55px, calc(55px + (16 * (100vw - 375px)) / 1065), 72px);
     margin-bottom: clamp(148px, 25.15vw, 156px);
     gap: 30px 24px ;
 }
@@ -136,20 +144,16 @@ body{
     max-width: 100%;
 }
 
+/* CARDS FEATURES OPTIMIZING */
 
-h2{
-    font-weight: 700;
-    font-family: 'Archivo', sans-serif;
-    font-size: clamp(32px, 1.5vw + 25px,  48px);
-    text-align: center;
+.features-optimizing h2{
     padding-bottom: 56px;
 }
 
-/* CARDS FEATURES OPTIMIZING */
 
 .card-features-optimizing img{
     width: 56px;
-    margin: 24px 196px 56px 24px;
+    margin: 20.5px 196px 56px 24px;
 }
 
 .card{
@@ -711,16 +715,12 @@ margin-left: 15.95%;
         max-width: 50%;
         text-align: center;
         margin: 0 auto;
-        padding-bottom: 3.5rem;
     }
 
     .card-features-optimizing{
         display: flex;
         padding: 0 clamp(16px, 8vw, 126px);
         width: 100%;
-    }
-
-    .card-features-optimizing{
         gap: 60px;
     }
 
@@ -755,7 +755,7 @@ margin-left: 15.95%;
         gap: 48px;
         align-items: center;
         margin: 0 auto;
-        margin-top:  clamp(56px, 5vw, 75px);
+        margin-top: clamp(55px, calc(55px + (19 * (100vw - 375px)) / 1065), 75px);
         margin-bottom: clamp(148px, 25.15vw, 156px);
     }
 
