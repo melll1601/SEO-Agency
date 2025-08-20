@@ -296,49 +296,43 @@ h2{
     padding-bottom: 14% ;
 }
 
-
 #overlay-teamvideo{
+    background-color: var(--text-light);
     display: flex;
-    background: #fff;
-    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.05);
+    max-width: 100%;
     height: 96px;
+    border-radius: 16px;
+    margin: 21px 28px 17px 20px;
     align-items: center;
-
-
+    position: absolute;
+    left: 210px;
+    bottom: 140px;
 }
-
-
-#overlay-text h5{
-    font-weight: 700;
-    font-size: calc(2rem - 8px);
-}
-
-
-#overlay-text p{
-    font-size: 1rem;
-    line-height: 160%;
-    font-weight: 400;
-}
-
-
-.team-icon{
-    align-items: center;
-}
-
 
 #team-icons img{
-    width: 100%;
-    padding: 21px 24px 21px 20px  ;
-}
-/* FALTA FAZER */
-
-
-
-
-#overlay-teamvideo{
-    display: none;
+    width: 120px;
+    height: 54px;
+    margin: 21px 24px 21px 20px;
 }
 
+#overlay-text{
+    width: 137px;
+    margin: 17px 28px 17px 0px;
+}
+
+#overlay-text h3{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 150%;
+    font-family: 'Archivo', sans-serif;
+}
+
+#overlay-text h4{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 160%;
+    color: var(--text-average);
+}
 
 /* OPTIMIZATION STRATEGIES */
 
@@ -725,17 +719,9 @@ input{
     display: none;
     }
 
-
-}
-
-
-
-
-@media screen and (min-width: 768px) and (max-width: 1270px){
-
-
-
-
+    #overlay-teamvideo{
+        display: none;
+    }
 
 
 }
@@ -743,7 +729,27 @@ input{
 
 
 
-@media (min-width: 1270px){
+@media screen and (min-width: 768px) and (max-width: 1280px){
+
+    .logos-partnerships{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr 1fr;
+    }
+
+
+    #overlay-teamvideo{
+        display: none;
+    }
+
+
+
+}
+
+
+
+
+@media (min-width: 1281px){
 
 
     .container{
