@@ -11,8 +11,6 @@
 
 
 :root{
-
-
     --text-dark: #101010;
     --text-light: #FFFFFF;
     --text-average: #757B8A;
@@ -729,7 +727,7 @@ input{
 
 
 
-@media screen and (min-width: 768px) and (max-width: 1280px){
+@media screen and (min-width: 768px){
 
     .logos-partnerships{
         display: grid;
@@ -741,13 +739,37 @@ input{
     #overlay-teamvideo{
         display: none;
     }
-
-
-
 }
 
+@media screen and (min-width: 900px) {
+
+    .card-features-optimizing{
+        display: flex;
+        padding: 0;
+        width: 100%;
+    }
+
+    .discover-our-img-desktop{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1FR 1FR;
+        grid-template-rows: 1fr 1fr;
+        padding: 0PX;
+    }
+
+    
+    .discover-our-title{
+        display: flex;
+        text-align: left;
+        align-items: center;
+    }
 
 
+    .discover-our-title h2{
+        padding: 0px;
+    }
+
+    
+}
 
 @media (min-width: 1281px){
 
@@ -756,15 +778,9 @@ input{
         padding: 0rem 7.5rem 0rem 7.5rem;
     }
 
-
-
-
     #menu-smartphone{
         display: none;
     }
-
-
-
 
     .header-inner{
         display: flex;
@@ -772,9 +788,6 @@ input{
         gap: 65px ;
         padding: 0rem 0rem 0rem 7.5rem;
     }
-
-
-
 
     .menu-desktop{
         display: flex;
@@ -785,18 +798,12 @@ input{
         padding-top: clamp(12px, 2.4vw, 24px);
     }
 
-
-
-
     .menu-desktop a{
         text-decoration: none;
         color: var(--text-average);
         line-height: 150%;
         font-weight: 400;
     }
-
-
-
 
     .img-header{
         display: block;
@@ -887,21 +894,9 @@ input{
 
     .logo-walmart img{
         width: 7.5rem;
-
-
-
-
     }
 
-
-
-
-
-
-
-
     /* CARDS FEATURES OPTIMIZING */
-
 
      .features-optimizing h2{
         max-width: 50%;
@@ -916,8 +911,6 @@ input{
         width: 100%;
         gap: 60px;
     }
-
-
 
 
     /* MAKE YOUR WEBSITE */
