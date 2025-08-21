@@ -130,7 +130,7 @@ h2{
 }
 
 
-.img-header-smartphone img{
+.img-hero-smartphone img{
     margin: 0 auto ;
     max-width: 93%;
     display: block;
@@ -138,7 +138,7 @@ h2{
 }
 
 
-.img-header{
+.img-hero-desktop{
     display: none;
 }
 
@@ -435,13 +435,6 @@ margin-bottom: 32px;
 }
 
 
-.discover-our-img-smartphone{
-    margin: 0 auto;
-    max-width: 100%;
-    display: block;
-}
-
-
 .person img {
     max-width: 100% ;
     margin: 0 auto;
@@ -459,7 +452,7 @@ margin-bottom: 32px;
 }
 
 
-.discover-our-img-desktop{
+.discover-our-img{
     display: flex;
     flex-direction: column;
     align-items: center;  
@@ -523,7 +516,7 @@ margin-bottom: 32px;
     padding-bottom: 16px;
 }
 
-.lines.text-selected {
+.questions-lines.text-selected {
   padding: 0; 
 }
 
@@ -536,7 +529,7 @@ margin-bottom: 32px;
 }
 
 
-.lines{
+.questions-lines{
     display: flex;
     color: var(--text-average);
     font-weight: 700;
@@ -547,7 +540,7 @@ margin-bottom: 32px;
 }
 
 
-.lines img{
+.questions-lines img{
     display: block;
     height: 24px;
     width: 24px;
@@ -603,8 +596,6 @@ margin-bottom: 32px;
 .footer{
     padding-top: clamp(50px, 6vw, 80px);
     background-color: var(--background-color);
-    padding-left: 32px ;
-    padding-right: 30px;
 }
 
 
@@ -650,7 +641,7 @@ input{
 }
 
 
-.buttom::after{
+.button-footer::after{
     display: block;
     content: "";
     width: 100%;
@@ -660,13 +651,13 @@ input{
 }
 
 
-.social{
+.social-footer{
     margin: auto 0;
     text-align: center;
 }
 
 
-.social img{
+.social-footer img{
     width: 20px;
     height: 20px;
 }
@@ -769,7 +760,7 @@ input{
         display: none;
     }
 
-    .discover-our-img-desktop{
+    .discover-our-img{
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
@@ -794,7 +785,7 @@ input{
         display: flex;
     }
 
-    .img-header-smartphone{
+    .img-hero-smartphone{
         max-width: 600px;
         width: 100%;
     }
@@ -812,7 +803,7 @@ input{
         width: 100%;
     }
 
-    .discover-our-img-desktop{
+    .discover-our-img{
         display: grid;
         grid-template-columns: 1fr 1fr 1FR 1FR;
         grid-template-rows: 1fr;
@@ -867,7 +858,7 @@ input{
         transform: translateY(-548px);
     }
 
-    .texto{
+    .contact-us-text{
         max-width: 58% ;
     }
 
@@ -991,14 +982,14 @@ input{
         font-weight: 400;
     }
 
-    .img-header{
+    .img-hero-desktop{
         display: block;
         position: absolute;
         right: 37px;
         top: 0;
     }
  
-    #About-menudesktop{
+    #About-menudesktop a{
         font-weight: 700;
         color: var(--primary-color);
         line-height: 150%;
@@ -1015,7 +1006,7 @@ input{
 
 
 
-    .img-header img{
+    .img-hero-desktop img{
         max-width: 600px;
         height: auto;
     }
@@ -1028,7 +1019,7 @@ input{
     }
 
 
-    .img-header-smartphone img{
+    .img-hero-smartphone img{
         display: none;
     }
    
@@ -1193,7 +1184,7 @@ input{
     /* DISCOVER OUR */
 
 
-    .discover-our-img-desktop{
+    .discover-our-img{
         display: grid;
         grid-template-rows: 1fr;
         grid-template-columns: repeat(4, 1fr);
@@ -1227,7 +1218,7 @@ input{
 
     }
 
-    .lines{
+    .questions-lines{
     line-height: 120%;
     }
 
@@ -1235,7 +1226,7 @@ input{
         padding: 0px 223px 0px 223px;
     }
 
-    .lines{
+    .questions-lines{
         align-items: center;
     }
 
@@ -1270,7 +1261,7 @@ input{
         transform: translateY(-548px);
     }
 
-    .texto{
+    .contact-us-text{
         max-width: 58% ;
     }
 
@@ -1298,7 +1289,7 @@ input{
         justify-content: space-between;
     }
 
-    .questions{
+    .questions-awesome-features{
         display: flex;
         flex-direction: column;
     }
@@ -1347,7 +1338,7 @@ input{
         justify-content: space-between;
     }
 
-    .social::before{
+    .social-footer::before{
         display: block;
         content: "";
         width: 100%;
@@ -1366,13 +1357,13 @@ input{
         margin-left: 72px;
     }
 
-    .footer-baixo{
+    .final-footer-part{
         display: flex;
         margin: 0px;
         justify-content: space-between;
     }
 
-    .buttom::after{
+    .button-footer::after{
          display: block;
         content: "";
         width: 353px;
