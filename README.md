@@ -60,8 +60,10 @@ SEO-AGENCY
 
 # Preview 👾
 
-| ![Rodando o projeto](assets/assets-readme/smartphone-readme.gif) | ![Rodando o projeto](assets/assets-readme/video-readme-desktop.gif) |
-|:---------------------------------:|:-----------------------------------------:|
+<p align="left">
+  <img src="/assets/assets-readme/smartphone-readme.gif" height="300" />
+  <img src="/assets/assets-readme/video-readme-desktop.gif" height="300" />
+</p>
 
 # Tecnologias Utilizadas 
 
@@ -112,7 +114,7 @@ Após concluir o HTML, passei para o CSS, adotando a abordagem mobile first. Pri
 
 - Desafios: A parte mais difícil do desenvolvimento foi criar imagens que ficavam sobrepostas, pois foi algo que eu não havia visto ainda e foi um grande desafio entender como fazer e deixar responsivo. Além disso, o tempo de elaboração do projeto, pois percebi que, mesmo melhorando meus conhecimentos a respeito, ainda tenho dificuldades em desenvolver front-end com rapidez.
 
-# Contato 
+#  Contato 📲
 - 📩 Email Escolar: melissa_r_pereira@estudante.sesisenai.org.br
 
 - ✉️ Email Pessoal: melissa.pereira1601@gmail.com
