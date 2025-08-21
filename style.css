@@ -106,6 +106,7 @@ h2{
     color: var(--text-average);
     padding-bottom: clamp(24px, 3vw, 40px);
     width: 100%;
+    max-width: 455px;
 }
 
 
@@ -344,6 +345,15 @@ h2{
     padding-bottom: 0px;
 }
 
+.optimization-strategies h2::after{
+    display: block;
+    content: "";
+    height: 1px;
+    background-color: #D6D6D6;
+    margin-top: clamp(65px, 10vw, 96px);
+    margin-bottom: 32px;
+}
+
 .text-optimization-table a{
     display: inline-block;
     background-color: var(--primary-color);
@@ -361,18 +371,18 @@ h2{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-left: 15.95%;
+    gap: 16px;
 }
 
-.title{
+.title h3{
     font-weight: 700;
-    font-size: 24px;
     line-height: 120%;
+    font-size: 24px;
 }
 
-.content{
+.content p{
     font-weight: 400;
-    font-size: 18px;
+    font-size: clamp(16px, 2vw, 18px);
     line-height: 160%;
     max-width: 493px;
 }
@@ -383,9 +393,8 @@ h2{
     max-width: 100%;
     height: 1px;
     background-color: #D6D6D6;
-    margin-top: 60px;
+    margin-top: 32px;
     margin-bottom: 32px;
-    margin-left: 15.95%;
 }
 
 .optimization-strategies h2::after{
@@ -393,9 +402,8 @@ display: block;
 content: "";
 height: 1px;
 background-color: #D6D6D6;
-margin-top: 50px;
+margin-top: clamp(65px, 10vw, 96px);
 margin-bottom: 32px;
-margin-left: 15.95%;
 }
 
 .text-optimization-table a{
@@ -415,7 +423,6 @@ margin-left: 15.95%;
 
 .discover-our h2{
     text-align: left;
-    padding-top: clamp(61px, 8vw, 113px);
     padding-bottom: clamp(20px, 4vw, 96px);
 }
 
@@ -444,6 +451,11 @@ margin-left: 15.95%;
 .person{
     max-width: 100%;
     margin: 0 auto;
+
+}
+
+.person img{
+        width: 329px;
 }
 
 
@@ -463,7 +475,6 @@ margin-left: 15.95%;
     padding-top: 16px;
 }
 
-
 .person p{
     font-size: 16px;
     font-weight: 400;
@@ -472,11 +483,13 @@ margin-left: 15.95%;
     padding-bottom: clamp(86px, 9.77vw + 49.38px, 190px);
 }
 
-
 .discover-our-title{
     padding-bottom: clamp(38px, 4vw, 56px);
 }
 
+.discover-our-title p{
+    max-width: 90%;
+}
 
 .person img{
     max-width: 100% ;
@@ -486,6 +499,9 @@ margin-left: 15.95%;
 
 /* AWESOME FEATURES */
 
+.awesome-features{
+    margin-bottom:  clamp(153px, -2vw + 190px, 168px);
+}
 
 .awesome-features p{
     width: 80%;
@@ -493,6 +509,8 @@ margin-left: 15.95%;
 
 .awesome-features h2{
   padding-bottom: clamp(57px, 5vw, 72px);
+  text-align: center;
+
 }
 
 
@@ -734,7 +752,7 @@ input{
 
 
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px) and (max-width: 955px){
 
     .logos-partnerships{
         display: grid;
@@ -743,16 +761,50 @@ input{
     }
 
 
+    .img-contact-us{
+        display: none;
+    }
+
     #overlay-teamvideo{
         display: none;
     }
 
-        .img-contact-us{
-        display: none;
+    .discover-our-img-desktop{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        padding: 0PX;
+        gap: 1%;
+    }
+
+    .person img{
+        width: 90%;
+        padding: 0px;
+    }
+
+    .person p{
+        padding-bottom: 30px;
+    }
+    
+}
+
+@media screen and (min-width: 1149px) and (max-width: 1281px){
+
+        .hero{
+        display: flex;
+    }
+
+    .img-header-smartphone{
+        max-width: 600px;
+        width: 100%;
+    }
+
+    #arrow{
+        left: 42%;
     }
 }
 
-@media screen and (min-width: 955px) {
+    @media screen and (min-width: 955px) and (max-width: 1281px) {
 
     .card-features-optimizing{
         display: flex;
@@ -763,7 +815,7 @@ input{
     .discover-our-img-desktop{
         display: grid;
         grid-template-columns: 1fr 1fr 1FR 1FR;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 1fr;
         padding: 0PX;
         gap: 1%;
     }
@@ -785,6 +837,11 @@ input{
         width: 75%;
     }
 
+    .discover-our-title{
+        display: flex;
+        text-align: left;
+        align-items: center;
+    }
 
     .card-contact-us{
     background-color: var(--primary-color);
@@ -813,8 +870,92 @@ input{
     .texto{
         max-width: 58% ;
     }
-    
+
+    #overlay-teamvideo{
+        display: none;
+    }
+
+    .optimization-strategies{
+        padding-bottom:  clamp(136px, calc(136px + (37 * (100vw - 375px) / 1065)), 173px);
+
+    }
+
+
+    .text-optimization-table{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: 15.95%;
+    }
+
+
+    .title h3{
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 120%;
+    }
+
+
+    .content{
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 160%;
+        max-width: 493px;
+    }
+
+
+    .text-optimization-strategies::after{
+        display: block;
+        content: "";
+        max-width: 100%;
+        height: 1px;
+        background-color: #D6D6D6;
+        margin-top: 60px;
+        margin-bottom: 32px;
+        margin-left: 15.95%;
+    }
+
+
+    .optimization-strategies h2::after{
+        margin-left: 15.95%;
+    }
+
+
+    .text-optimization-table a{
+        display: inline-block;
+        background-color: var(--primary-color);
+        color: var(--text-light);
+        border-radius: 100px ;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 16px;
+        padding: 16px 32px 16px 32px;
+        margin-top: clamp(54px, 5vw, 66px);
+    }
+
+    .content{
+        flex-direction: column;
+    } 
+
+         .make-your-website{
+        display: flex;
+    }
+
+
+    .text-make-your-website{
+        max-width: 62%;
+        padding-top: 151px;
+        padding-left: 10% ;
+        padding-right: 5%;
+    }
+
+
+    .video-with-remote-team img{
+        max-width: 378px;
+        padding: 80px 0px;
+    }
 }
+
 
 @media (min-width: 1281px){
 
@@ -978,6 +1119,8 @@ input{
         padding: 80px 0px;
     }
 
+    
+
 
     /* OPTIMIZATION STRATEGIES */
 
@@ -989,12 +1132,13 @@ input{
 
     .text-optimization-table{
         display: flex;
+        flex-direction: row;
         justify-content: space-between;
         margin-left: 15.95%;
     }
 
 
-    .title{
+    .title h3{
         font-weight: 700;
         font-size: 24px;
         line-height: 120%;
@@ -1022,13 +1166,7 @@ input{
 
 
     .optimization-strategies h2::after{
-    display: block;
-    content: "";
-    height: 1px;
-    background-color: #D6D6D6;
-    margin-top: 50px;
-    margin-bottom: 32px;
-    margin-left: 15.95%;
+        margin-left: 15.95%;
     }
 
 
@@ -1061,6 +1199,7 @@ input{
         grid-template-columns: repeat(4, 1fr);
         gap: 32px;
         margin: 0 auto;
+        width: 100%;
     }
 
 
@@ -1082,9 +1221,10 @@ input{
     }
 
     .awesome-features h2{
-        max-width: 584px;
         margin: 0 auto;
         padding-bottom: 72px;
+        max-width: 584px;
+
     }
 
     .lines{
